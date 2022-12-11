@@ -39,7 +39,7 @@ class Expression {
             return calculation
         }
         // find the last operator before the last %
-        val operatorBeforePercentPos = calculation.subSequence(0, percentPos - 1).lastIndexOfAny(charArrayOf('-', '+', '*', '/', '('))
+        val operatorBeforePercentPos = calculation.subSequence(0, percentPos - 1).lastIndexOfAny(charArrayOf('-', '+', '×', '÷', '('))
         if (operatorBeforePercentPos < 1) {
             return calculation
         }
